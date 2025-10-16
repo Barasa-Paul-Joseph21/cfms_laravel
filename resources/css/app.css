@@ -9,3 +9,419 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* CFMS Custom Styles */
+:root {
+    --cfms-primary: #007bff;
+    --cfms-secondary: #28a745;
+    --cfms-accent: #fd7e14;
+}
+
+.cfms-gradient {
+    background: linear-gradient(135deg, var(--cfms-primary), var(--cfms-secondary));
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+}
+
+.animate-slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+.animate-bounce-in {
+    animation: bounceIn 1s ease-out;
+}
+
+.animate-slide-left {
+    animation: slideLeft 0.7s ease-out;
+}
+
+.animate-slide-right {
+    animation: slideRight 0.7s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.3); }
+    50% { opacity: 1; transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Zoho Books Style Hero Section */
+.header-section-parent {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content-wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.header-content-wrap h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-content-wrap p {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+}
+
+.header-cta-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.primary-cta-style {
+    background: #007bff;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.primary-cta-style:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.secondary-cta {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.secondary-cta:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.dash-animation-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-bg-circle {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.floating-image {
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.dashboard-animation {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.dash-scrollable-wrap {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    width: 300px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: dashScroll 10s infinite linear;
+}
+
+@keyframes dashScroll {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.widget-parent {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.widget-parent h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.invoice-data {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.invoice-data td {
+    padding: 0.25rem 0;
+}
+
+.invoice-data-full {
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+.invoice-data-full td {
+    padding: 0.2rem;
+    border-bottom: 1px solid #eee;
+}
+
+/* Vibrant backgrounds */
+.trust-bg {
+    background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(40, 167, 69, 0.1)), url('/images/trust-pattern.png') no-repeat center;
+    background-size: cover;
+}
+
+.audience-bg {
+    background: linear-gradient(135deg, rgba(253, 126, 20, 0.1), rgba(0, 123, 255, 0.1)), url('/images/audience-bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.integrations-bg {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(0, 123, 255, 0.1)), url('/images/integrations-bg.png') no-repeat center;
+    background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .header-section-parent {
+        padding: 3rem 0;
+    }
+
+    .header-content-wrap {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .header-content-wrap h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-cta-container {
+        justify-content: center;
+    }
+
+    .dash-animation-wrap {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    .hero-bg-circle {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .dash-scrollable-wrap {
+        position: relative;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        height: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-section-parent {
+        padding: 2rem 0;
+    }
+
+    .header-content-wrap h1 {
+        font-size: 2rem;
+    }
+
+    .header-content-wrap p {
+        font-size: 1rem;
+    }
+
+    .primary-cta-style,
+    .secondary-cta {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-bg-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .dash-scrollable-wrap {
+        height: 150px;
+        padding: 0.5rem;
+    }
+
+    .widget-parent {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .widget-parent h5 {
+        font-size: 0.8rem;
+    }
+
+    .invoice-data,
+    .invoice-data-full {
+        font-size: 0.6rem;
+    }
+
+    /* Hide complex widgets on mobile */
+    .timer-widget-parent,
+    .inventory-widget-parent,
+    .banking-widget-parent {
+        display: none;
+    }
+
+    .trust-section .row {
+        flex-direction: column;
+    }
+
+    .trust-section .card {
+        margin-bottom: 1rem;
+    }
+
+    .features-section .row {
+        flex-direction: column;
+    }
+
+    .features-section .col-md-4 {
+        margin-bottom: 2rem;
+    }
+
+    .industries-section .row {
+        flex-direction: column;
+    }
+
+    .industries-section .col-md-3 {
+        margin-bottom: 2rem;
+    }
+
+    .integrations-section .row {
+        flex-direction: column;
+    }
+
+    .integrations-section .col-md-4 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .header-content-wrap h1 {
+        font-size: 1.8rem;
+    }
+
+    .header-cta-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .primary-cta-style,
+    .secondary-cta {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .hero-bg-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dash-scrollable-wrap {
+        height: 120px;
+        padding: 0.25rem;
+    }
+
+    .widget-parent {
+        padding: 0.25rem;
+    }
+
+    .widget-parent h5 {
+        font-size: 0.7rem;
+    }
+}

@@ -1,61 +1,173 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Corporate Finance Management System (CFMS)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**Project Overview**  
+The Corporate Finance Management System (CFMS) is an enterprise-grade web application built to manage financial operations of businesses, from small companies to large corporations. The system acts as a digital CFO, handling transactions, reporting, compliance, risk management, payroll, and more.
 
-## About Laravel
+CFMS is built with **Laravel 12**, **PostgreSQL**, and runs in a **Dockerized environment using Laravel Sail** for easy setup and cross-platform consistency.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## **Key Features**
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Core Financial Management
+- General Ledger (GL): central record of all transactions.
+- Chart of Accounts: flexible setup for assets, liabilities, income, and expenses.
+- Accounts Payable (AP): manage vendor bills, due dates, and payments.
+- Accounts Receivable (AR): manage invoices, collections, and overdue alerts.
 
-## Learning Laravel
+### Cash & Liquidity Management
+- Real-time cash position across bank accounts, mobile money, and petty cash.
+- Cash flow forecasting and bank reconciliation.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Budgeting & Forecasting
+- Annual/monthly budgets per department.
+- Scenario planning and variance analysis.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### Payroll & HR Integration
+- Salary calculations, deductions, tax compliance.
+- Employee expense claims and reimbursements.
+- Integration with attendance/HR systems.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Tax & Compliance
+- Automatic VAT/GST calculations per country.
+- Withholding tax management.
+- IFRS & GAAP compliance.
+- Tax-ready reporting for government authorities.
 
-## Laravel Sponsors
+### Financial Reporting & Analytics
+- Profit & Loss, Balance Sheet, and Cash Flow Statements.
+- KPI dashboards and drill-down analytics.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Security & Audit Trails
+- Role-based access (Admin, Accountant, Auditor, Manager, Employee).
+- Activity logging with approval workflows.
+- CSRF protection and HTTPS enforced.
 
-### Premium Partners
+### Multi-Company & Multi-Currency Support
+- Parent company + subsidiaries.
+- Consolidated reporting across branches.
+- Real-time currency conversion (USD, UGX, KES, TZS).
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### APIs & Integrations
+- Bank and payment gateway integrations (MTN MoMo, PayPal, Stripe).
+- ERP/CRM API connections.
+- Automated invoicing and reminders.
 
-## Contributing
+### Future-Ready / AI Features
+- Fraud detection and AI-based expense prediction.
+- Chatbots for finance queries.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## **Project Status**
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+- **MVP (by 27 November)**: ~35% complete  
+  - User authentication & roles  
+  - Admin & Accountant dashboards  
+  - General Ledger, Chart of Accounts, AP & AR  
+  - Basic financial reports (P&L, Balance Sheet)
 
-## Security Vulnerabilities
+- **Extended Features (by 1st week of January)**: ~65–70% complete  
+  - Budgeting & forecasting  
+  - Cash & liquidity management  
+  - Payroll integration (basic)  
+  - Audit logs & export/import features  
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Enterprise-level completion**: Post-Jan 2026  
+  - Multi-company consolidation, AI features, advanced treasury & investments, full security hardening.
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## **Tech Stack**
+
+- **Backend:** PHP 8.4+, Laravel 12  
+- **Frontend:** Blade + Bootstrap,HTML,CSS,Javascript
+- **Database:** PostgreSQL database and redis database 
+- **Dev Environment:** Docker, Laravel Sail  
+
+---
+
+## **Core Packages**
+
+- `laravel/breeze` or `laravel/jetstream` → Authentication scaffolding  
+- `spatie/laravel-permission` → Role-based access  
+- `maatwebsite/excel` → Excel import/export  
+- `barryvdh/laravel-dompdf` → PDF reports  
+- `larapex-charts` → Charts & dashboard visuals  
+- `spatie/laravel-activitylog` → Audit logging  
+- `laravel/sanctum` → API authentication  
+- `guzzlehttp/guzzle` → External API calls  
+
+### Security / Enterprise Add-ons
+- Rate limiting (ThrottleRequests middleware)  
+- Encryption (Laravel Crypt + PostgreSQL `pgcrypto`)  
+- Error monitoring: `sentry/sentry-laravel`  
+- Development debugging: `laravel/telescope`  
+- Backups: `spatie/laravel-backup`  
+- Database migration safety: `doctrine/dbal`  
+
+---
+  ## Enterprise-Ready Folder structure
+
+cfms_laravel/
+├── app/
+│   ├── Console/
+│   │   └── Commands/          # Artisan commands for cron jobs, automated tasks
+│   ├── Exceptions/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Auth/          # Authentication controllers
+│   │   │   ├── Dashboard/     # Admin & Accountant dashboards
+│   │   │   ├── GL/            # General Ledger controllers
+│   │   │   ├── AP/            # Accounts Payable
+│   │   │   ├── AR/            # Accounts Receivable
+│   │   │   ├── Payroll/       # Payroll & HR
+│   │   │   └── Reports/       # Financial reports controllers
+│   │   ├── Middleware/
+│   │   └── Requests/
+│   ├── Jobs/                  # Redis queued jobs (e.g., reports, notifications)
+│   ├── Models/
+│   │   ├── GL/
+│   │   ├── AP/
+│   │   ├── AR/
+│   │   ├── Payroll/
+│   │   └── User.php
+│   ├── Policies/
+│   └── Services/              # Business logic (e.g., PaymentService, BankIntegrationService)
+├── bootstrap/
+├── config/
+│   ├── database.php            # PostgreSQL & Redis configs
+│   ├── cache.php               # Redis caching
+│   ├── queue.php               # Redis queue connection
+│   └── services.php            # API keys, Payment gateways
+├── database/
+│   ├── factories/
+│   ├── migrations/             # PostgreSQL table structures
+│   └── seeders/
+├── public/
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+│       ├── auth/
+│       ├── dashboards/
+│       ├── gl/
+│       ├── ap/
+│       ├── ar/
+│       ├── payroll/
+│       └── reports/
+├── routes/
+│   ├── web.php
+│   └── api.php                 # Token-based API routes
+├── storage/
+│   ├── logs/
+│   ├── app/
+│   └── framework/
+├── tests/
+│   ├── Feature/
+│   └── Unit/
+├── vendor/
+├── docker-compose.yml           # Includes PostgreSQL, Redis, and services
+├── .env
+└── README.md
+
